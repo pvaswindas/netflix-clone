@@ -1,71 +1,141 @@
-# Getting Started with Create React App
+# Netflix Clone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A Netflix clone built using React that replicates the basic UI and functionalities of Netflix, including a banner, movie rows, and video previews.
+
+## Features
+- Responsive UI similar to Netflix
+- Dynamic movie rows fetched using Axios
+- Banner with featured content
+- Video previews using `react-youtube`
+- Navigation bar
+
+## Tech Stack
+- **Frontend**: React, React Hooks, CSS
+- **API Requests**: Axios
+- **Video Player**: React-YouTube
+
+## Installation
+
+### Prerequisites
+Make sure you have the following installed:
+- Node.js (v16 or later)
+- npm or yarn
+
+### Steps to Run
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/pvaswindas/netflix-clone.git
+   cd netflix-clone
+   ```
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+3. Start the development server:
+   ```sh# Netflix Clone
+
+A Netflix clone built using React that replicates the basic UI and functionalities of Netflix, including a banner, movie rows, and video previews.
+
+## Features
+- Responsive UI similar to Netflix
+- Dynamic movie rows fetched using Axios
+- Banner with featured content
+- Video previews using `react-youtube`
+- Navigation bar
+
+## Tech Stack
+- **Frontend**: React, React Hooks, CSS
+- **API Requests**: Axios
+- **Video Player**: React-YouTube
+
+## Installation
+
+### Prerequisites
+Make sure you have the following installed:
+- Node.js (v16 or later)
+- npm or yarn
+
+### Steps to Run
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/pvaswindas/netflix-clone.git
+   cd netflix-clone
+   ```
+2. Install dependencies:
+   ```sh
+   npm install
+   ```
+3. Start the development server:
+   ```sh
+   npm start
+   ```
+4. Open the project in your browser at `http://localhost:3000`
+
+## Project Structure
+```
+netflix-clone/
+│── public/           # Static assets
+│── src/
+│   ├── components/   # Reusable components
+│   ├── App.jsx       # Main application component
+│   ├── axios.jsx     # Axios instance for API calls
+│   ├── urls.jsx      # API endpoints
+│   ├── index.jsx     # React entry file
+│── package.json      # Dependencies & scripts
+│── README.md         # Project documentation
+```
 
 ## Available Scripts
+- `npm start` - Runs the app in development mode
+- `npm build` - Builds the app for production
 
-In the project directory, you can run:
+## Dependencies
+- `react` - Core React library
+- `react-dom` - React's DOM renderer
+- `axios` - HTTP client for API requests
+- `react-youtube` - Embedded YouTube player for previews
 
-### `npm start`
+## API Integration
+The project fetches movie data using an API (e.g., TMDB). Ensure you have an API key and update the `axios.jsx` file accordingly.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Contributing
+Feel free to fork this repository and contribute! Create a pull request with improvements or new features.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## License
+This project is for educational purposes only and is not affiliated with Netflix in any way.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Enjoy coding! 🚀
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+│   ├── App.jsx       # Main application component
+│   ├── axios.jsx     # Axios instance for API calls
+│   ├── urls.jsx      # API endpoints
+│   ├── index.jsx     # React entry file
+│── package.json      # Dependencies & scripts
+│── README.md         # Project documentation
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Available Scripts
+- `npm start` - Runs the app in development mode
+- `npm build` - Builds the app for production
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Dependencies
+- `react` - Core React library
+- `react-dom` - React's DOM renderer
+- `axios` - HTTP client for API requests
+- `react-youtube` - Embedded YouTube player for previews
 
-### `npm run eject`
+## API Integration
+The project fetches movie data using an API (e.g., TMDB). Ensure you have an API key and update the `axios.jsx` file accordingly.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Contributing
+Feel free to fork this repository and contribute! Create a pull request with improvements or new features.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## License
+This project is for educational purposes only and is not affiliated with Netflix in any way.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# netflix-clone
+Enjoy coding! 🚀
