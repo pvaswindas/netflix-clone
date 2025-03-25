@@ -1,5 +1,8 @@
 # Netflix Clone
 
+![Netflix-Clone Preview](/public/images/netflix-clone-preview.png)
+![Netflix-Clone Preview 2](/public/images/netflix-clone-preview-2.png)
+
 ## Overview
 This is a Netflix-inspired web application built using React, featuring a responsive UI, dynamic movie rows, and video previews. The project replicates key functionalities of the Netflix interface while serving as an educational demonstration of modern web development techniques.
 
