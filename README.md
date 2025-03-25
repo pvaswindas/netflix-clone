@@ -39,19 +39,12 @@ Before you begin, ensure you have the following installed:
    npm install
    ```
 
-3. Set up environment variables
-   - Create a `.env` file in the project root
-   - Add your TMDB (or chosen movie API) credentials
-     ```
-     REACT_APP_API_KEY=your_api_key_here
-     ```
-
-4. Start the development server
+3. Start the development server
    ```bash
    npm start
    ```
 
-5. Open the application
+4. Open the application
    - Navigate to `http://localhost:3000`
 
 ## 📂 Project Structure
@@ -61,11 +54,10 @@ netflix-clone/
 ├── public/           # Static assets
 ├── src/
 │   ├── components/   # Reusable React components
-│   │   ├── Banner.jsx
-│   │   ├── NavBar.jsx
-│   │   └── MovieRow.jsx
+│   ├── App.css       # Global application styles
 │   ├── App.jsx       # Main application component
 │   ├── axios.jsx     # Axios configuration
+│   ├── constants/    # Constant values and configurations
 │   ├── urls.jsx      # API endpoint configurations
 │   └── index.jsx     # React entry point
 │
@@ -83,13 +75,12 @@ netflix-clone/
 - `react-dom`: DOM rendering for React
 - `axios`: Promise-based HTTP client
 - `react-youtube`: YouTube video embedding
-- `react-router-dom`: Routing management (if implemented)
 
 ## 🌐 API Integration
-The application fetches movie data from The Movie Database (TMDB) API. 
-- Ensure you have an active API key
-- Replace placeholder API configurations in `axios.jsx`
-- Respect API usage guidelines and rate limits
+The application fetches movie data from an API. 
+- Check `axios.jsx` for API configuration
+- Verify API endpoint settings in `urls.jsx`
+- Ensure proper API key and endpoint management
 
 ## 🤝 Contributing
 Contributions are welcome! 
@@ -100,18 +91,17 @@ Contributions are welcome!
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📋 TODO
-- [ ] Add user authentication
-- [ ] Implement watchlist functionality
-- [ ] Create more detailed movie information modals
-- [ ] Add search functionality
+## 📋 Potential Improvements
+- [ ] Add more robust error handling
+- [ ] Implement caching mechanisms
+- [ ] Enhance UI/UX with more interactive elements
+- [ ] Add more detailed movie information displays
 
 ## ⚖️ License
 This project is for educational purposes. Not affiliated with Netflix.
 
 ## 🙌 Acknowledgments
 - Netflix for design inspiration
-- TMDB for movie data
 - React community for amazing tools and libraries
 
 ---
