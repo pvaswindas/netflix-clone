@@ -1,0 +1,51 @@
+.row {
+    margin: 20px;
+    color: #fff;
+    margin-bottom: 2.5rem;
+}
+
+.posters {
+    display: flex;
+    padding-top: 1.5rem;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.posters::-webkit-scrollbar {
+    display: none;
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.posterimg {
+    max-height: 35vh;
+    border-radius: 4px;
+    margin-right: 1rem;
+    cursor: pointer;
+    transition: transform 0.5s ease, box-shadow 0.5s ease, opacity 0.5
+}
+
+.posterimg:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0);
+    filter: brightness(1);
+}
+
+
+.smallposterimg {
+    max-height: 18vh;
+    border-radius: 4px;
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+
+.smallposterimg:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0);
+    filter: brightness(1);
+}
+
+
